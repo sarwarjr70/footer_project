@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,700&family=DM+Serif+Display&family=DM+Serif+Text&display=swap');
+body{
+	margin: 0px;
+	padding: 0px;
+}
+a{
+	text-decoration: none;
+	display: inline-block;
+	
+}
+.dflex{
+	display: flex;
+	flex-wrap: wrap;
+}
+.justifycontent{
+	justify-content: space-between;
+}
+/*projects section start*/
+.projects{
+	width: 70%;
+	margin: auto;
+	display: flex;
+}
+.projects .finished_projects, .working_hours, .online_support, .happy_customers{
+	flex: 1 1 100%;
+}
+.projects h3{
+	font-family: "DM Sans", sans-serif;
+	font-weight: 700;
+	font-size: 46px;
+	line-height: 28px;
+	color: #404044;
+}
+.projects h3:hover{
+	color: #000;
+}
+.projects h4{
+	font-family: "DM Sans", sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 28px;
+	color: #707070;
+}
+
+/*projects section end*/
+/*success-work section start*/
+.success-work{
+	width: 80%;
+	margin: auto;
+	background-color: #F6F6F6;
+	margin-bottom: 50px;
+}
+.success-work h2{
+	text-align: center;
+	font-family: "DM Sans", sans-serif;
+	font-size: 38px;
+	line-height: 48px;
+	font-weight: 600;
+	color: #404044;
+	font-style: normal;
+}
+.success-work-banner{
+	margin: auto;
+	padding-top: 20px;
+	padding-bottom: 50px;
+	width: 70%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.success-work-banner img{
+	border-radius: 10px;
+	margin: 20px;
+	height: 250px;
+	display: block;
+
+}
+.blogs{
+	flex-basis: 25%;
+    flex-grow: 1;
+	min-height: 300px;
+	margin: 15px;
+	box-sizing: border-box;
+}
+.blog1{
+	background: url(../images/blog/blog1.jpg);
+	background-size: cover;
+	
+}
+.blog2{
+	background: url(../images/blog/blog2.jpg);
+	background-size: cover;
+}
+.blog3{
+	background: url(../images/blog/blog3.jpg);
+	background-size: cover;
+}
+.blog4{
+	background: url(../images/blog/blog4.jpg);
+	background-size: cover;
+
+}
+.blog5{
+	background: url(../images/blog/blog5.jpg);
+	background-size: cover;
+
+}
+.blog6{
+	background: url(../images/blog/blog6.jpg);
+	background-size: cover;
+}
+.overlays{
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 6px;
+	position: relative;
+	overflow: hidden;
+}
+.overlays .blog-overlay{
+	position: absolute;
+	bottom: -100%;
+	right: 0px;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	
+	opacity: 0;
+	transition: 1s all;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.overlays:hover .blog-overlay{
+	opacity: 1;
+	bottom: 0px;
+	background: rgba(0,0,0,0.3);
+}
+.overlays .blog-overlay h4{
+	display: inline-block;
+	font-family: Rubik, sans-serif;
+	font-size: 28px;
+	font-weight: 700;
+	color: #fff;
+}
+.overlays .blog-overlay p{
+	display: inline-block;
+	font-family: "DM Sans", sans-serif;
+	font-size: 19px;
+	color: #fff;
+}
+/*success-work section end*/
+/*photo display section start*/
+.photo-display{
+	margin: auto;
+	background: #397F6A;
+	display: flex;
+	justify-content: space-around;
+}
+.photo-display img{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	width: 20%;
+	
+}
+/*photo display section start*/
+/*footer section start*/
+footer{
+	background: #061F24;
+}
+.footer{
+
+	height: 300px;
+	width: 90%;
+	margin: 0px auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+footer .logo_icon a{
+	color: #FFFFFF;
+	padding-bottom: 10px;
+	display: inline-block;
+	font-family:"DM Sans", sans-serif;
+	font-size: 32px;
+	font-weight: 600;
+	line-height: 48px;
+	font-style: normal;
+	
+}
+.footer-section a{
+	color: #AAAAAA;
+	padding-right: 10px;
+	font-family:"DM Sans", sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 28px;
+	font-style: normal;
+}
+.footer-section a:hover{
+	color: #026346;
+}
+.copyright{
+	width: 90%;
+	margin: auto;
+	color: #AAAAAA;
+	display: flex;
+	justify-content: space-between;
+}
+.copyright a.w3{
+	color: #397F6A;
+	padding: 0px;
+	margin: 0px;
+}
+.copyright a.w3:hover{
+	color: #fff;
+}
+.footer-icon a{
+	margin-top: 10px;
+	margin-right: 15px;
+	color: #AAAAAA;
+}
+.footer-icon a:hover{
+	background: #007E6A;
+	border-radius: 50%;
+}
+/*footer section end*/
